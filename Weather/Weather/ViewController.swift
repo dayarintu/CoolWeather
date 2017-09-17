@@ -23,15 +23,31 @@ class ViewController: UIViewController {
                     do {
                         // Array
                         let myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
-                        print(myJson)
+                        if let currentData = myJson["currently"]as? NSDictionary {
+                            
+                            if let currentTemperature = currentData["temperature"] {
+                                let roundedTemp = Int(round(currentTemperature as! Double))
+                                print(roundedTemp)
+                            }
+                            if let humidity = currentData["humidity"] {
+                                
+                            print(humidity)
+                                
+                            }
+                            
+                            if let precipitation = currentData["precipIntensity"] {
+                                print(precipitation)
+                            }
+                        }
+                        
                     }
-                    catch{
+                    catch {
                         
                     }
                     
                 }
-                
             }
+            
         }
         task.resume()
     }
