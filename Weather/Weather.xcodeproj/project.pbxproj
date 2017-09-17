@@ -13,6 +13,7 @@
 		63FC6F821F6F223D0064C106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FC6F811F6F223D0064C106 /* Assets.xcassets */; };
 		63FC6F851F6F223D0064C106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FC6F831F6F223D0064C106 /* LaunchScreen.storyboard */; };
 		63FC6F8D1F6F24300064C106 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC6F8C1F6F24300064C106 /* Constants.swift */; };
+		63FC6F8F1F6F24B20064C106 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC6F8E1F6F24B20064C106 /* GCD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		63FC6F841F6F223D0064C106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FC6F861F6F223D0064C106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FC6F8C1F6F24300064C106 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		63FC6F8E1F6F24B20064C106 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				63FC6F7A1F6F223D0064C106 /* AppDelegate.swift */,
 				63FC6F7C1F6F223D0064C106 /* ViewController.swift */,
 				63FC6F8C1F6F24300064C106 /* Constants.swift */,
+				63FC6F8E1F6F24B20064C106 /* GCD.swift */,
 				63FC6F7E1F6F223D0064C106 /* Main.storyboard */,
 				63FC6F811F6F223D0064C106 /* Assets.xcassets */,
 				63FC6F831F6F223D0064C106 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				63FC6F7D1F6F223D0064C106 /* ViewController.swift in Sources */,
 				63FC6F7B1F6F223D0064C106 /* AppDelegate.swift in Sources */,
+				63FC6F8F1F6F24B20064C106 /* GCD.swift in Sources */,
 				63FC6F8D1F6F24300064C106 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
