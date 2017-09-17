@@ -9,18 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let url = URL(string: Constants.darksky)
-        
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil {
                 print("Error")
             }
-        // Do any additional setup after loading the view, typically from a nib.
+            else {
+                if let content = data {
+                    do {
+                        // Array
+                        let myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+                        print(myJson)
+                    }
+                    catch{
+                        
+                    }
+                    
+                }
+                
+            }
+        }
+        task.resume()
     }
 }
-}
-
